@@ -1,0 +1,18 @@
+my_app_homepage:
+    path:     /
+    defaults: { _controller: MyAppBundle:Default:index }
+layoutt:
+    path:     /layout
+    defaults: { _controller: MyAppBundle:Default:Layout }
+shop:
+    path:     /shop
+    defaults: { _controller: MyAppBundle:Default:Shop }
+teamm:
+    path:     /team
+    defaults: { _controller: MyAppBundle:Default:Team }
+exp:
+    path:     /exp
+    defaults: { _controller: MyAppBundle:Default:Exp }
+reset:
+    path:     /resetting
+    defaults: { _controller: MyAppBundle:Default:reset }

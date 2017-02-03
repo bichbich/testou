@@ -1,0 +1,52 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="shop_top">
+    <div class="container">
+        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+
+        <div class="register-top-grid">
+                <h3>PERSONAL INFORMATION</h3>
+                <div>
+                    <span>{{ form_label(form.username) }}<label>*</label></span>
+                    {{ form_widget(form.username) }}
+                </div>
+
+                <div>
+                    <span>{{ form_label(form.email) }}<label>*</label></span>
+                    {{ form_widget(form.email) }}
+                </div>
+                <div class="clear"> </div>
+                <a class="news-letter" href="#">
+                    <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
+                </a>
+                <div class="clear"> </div>
+            </div>
+            <div class="clear"> </div>
+            <div class="register-bottom-grid">
+                <h3>LOGIN INFORMATION</h3>
+                <div>
+                    <span>{{ form_label(form.plainPassword.first) }}<label>*</label></span>
+                    {{ form_widget(form.plainPassword.first) }}
+                </div>
+                <div>
+                    <span>{{ form_label(form.plainPassword.second) }}<label>*</label></span>
+                    {{ form_widget(form.plainPassword.second) }}
+                </div>
+                <div class="clear"> </div>
+            </div>
+            <div class="clear"> </div>
+<div>
+            <input type="submit" value="{{ 'registration.submit'|trans }}" />
+        </div>
+        {{ form_end(form) }}
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
